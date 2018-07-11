@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+	<name>winterling-labs-com</name>
+	<version>1.0</version>
+	<creationDate>03/05/2017</creationDate>
+	<author>Thomas Winterling</author>
+	<authorEmail>fallatas85@gmail.com</authorEmail>
+	<copyright>Copyright (C) 2005 - 2017 Thomas Winterling. All rights reserved.</copyright>
+	<description>TPL_PROTOSTAR_XML_DESCRIPTION</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>html</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+	</files>
+	<positions>
+		<position>preloader</position>
+		<position>menubutton</position>
+		<position>header</position>
+		<position>message</position>
+		<position>ud_intro</position>
+		<position>UeberUns</position>
+		<position>ud_UeberUns</position>
+		<position>ud_UeberUns ud_motto_bg</position>
+		<position>Leistungen</position>
+		<position>wl_leistungen</position>
+		<position>Kontakt</position>
+		<position>ud_kontakt</position>
+		<position>Impressum</position>
+		<position>ud_impressum</position>
+		<position>Datenschutz</position>
+		<position>ud_datenschutz</position>
+		<position>ud_meta_nav</position>
+		<position>ud_copyright</position>
+		<position>cookie</position>
+	</positions>
+</extension>

@@ -1,0 +1,1296 @@
+
+
+/* ################################################################################ */
+/* HTML Standart Tags */
+/* ################################################################################ */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 100px auto 0 auto; /* Oben - Rechts - Unten - Links */
+    font-size: 55px;
+}
+
+.ud_h2_balken {
+    margin: 0 auto 10px auto;
+    height: 5px;
+    width: 80px;
+}
+
+.ud_h3_balken {
+    margin: 0 auto 20px auto;
+    height: 5px;
+    width: 80px;
+}
+
+.ud_button {
+    text-transform: uppercase; /* Alles groß geschrieben */
+    padding: 10px 30px 10px 30px; /* Oben - Rechts - Unten - Links */
+    display: inline-block; /* Damit Margin verwendet werden kann*/
+    margin: 10px 0 20px 0; /* Oben - Rechts - Unten - Links */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ################################################################################ */
+/* Zusammengefasste Klassen */
+/* ################################################################################ */
+
+footer ,header, #Startseite .ud_h2_balken, #Kontakt .ud_h2_balken, #Leistungen, #Leistungen .ud_leistungen ul li .ud_tag_line .ud_h3_balken, #UeberUns .ud_h2_balken, #Impressum .ud_h2_balken, #Datenschutz .ud_h2_balken {
+    background: #fff;
+}
+
+.ud_page, #UeberUns, #Leistungen .ud_h2_balken, .ud_button:hover {
+    background: #444444;
+}
+
+#Kontakt h2, #Startseite h2, #Startseite p, #Startseite .ud_button, #Kontakt .ud_kontakt, #Kontakt .ud_kontakt a, #UeberUns .ud_motto_bg article .ud_motto, #Leistungen,
+#Leistungen .ud_leistungen ul li .ud_tag_line h3, #Leistungen .ud_leistungen ul li .ud_tag_line p, #UeberUns h2, header nav ul li a, header nav ul li,
+#Leistungen .ud_leistungen ul li .ud_tag_line h3, #Leistungen .ud_leistungen ul li .ud_tag_line p, header nav ul li a:hover, #Impressum h2, #Impressum #ud_impressum .custom p,#Datenschutz #ud_datenschutz .custom p, #Datenschutz h2,
+#Startseite #ud_intro p a
+
+
+{
+    color: #fff;
+}
+
+.test {
+  
+}
+
+p, a, header #ud_kontakt_icon .ud_kontakt_icon {
+    color: #999;
+}
+
+footer, footer a, #Impressum #ud_impressum {
+    color: #666;
+}
+
+.custom h2, header #ud_kontakt_icon .ud_kontakt_icon:hover  {
+    color: #111;
+}
+
+header nav ul li a:hover {
+    color: #FD8701;
+}
+
+#Leistungen .ud_leistungen ul li .ud_tag_line, #Leistungen .ud_leistungen ul li .ud_tag_line {
+    background-color: midnightblue;
+    border-radius: 5px;
+}
+
+
+#leistungen .ud_h2_balken {
+    background: #111;
+}
+
+p, header nav ul li, footer, #Kontakt .ud_kontakt, #Leistungen .ud_leistungen ul li .ud_tag_line h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300; /* Stärke */
+    line-height: 25px;
+    word-spacing: 3px;
+    color: white;
+}
+
+h2, #UeberUns .ud_motto_bg article .ud_motto {
+    font-family: "Lato", Arial, sans-serif;
+}
+
+header, header #ud_kontakt_icon, #ud_kontakt_icon .ud_kontakt_icon, header nav ul li a, header nav ul, header #ud_logo, header #ud_kontakt_icon
+.ud_kontakt_icon span {
+    transition: all 300ms; /* Alle Browser */
+    -moz-transition: all 300ms; /* Mozzilla */
+    -ms-transition: all 300ms; /* Internet Explorer */
+    -o-transition: all 300ms; /* Opera */
+    -transition: all 300ms; /* ? */
+}
+
+/* ################################################################################ */
+/* Zusammengefasste Klassen */
+/* ################################################################################ */
+
+.ud_page {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    float: left;
+}
+
+/* ################################################################################ */
+/* Header */
+/* ################################################################################ */
+
+header {
+    position: fixed; /* Header wird fest in die obere linke ecke geschoben durch fixed und loat: left; */
+    z-index: 99; /* Header wird auf die höchste Ebene gelegt */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #252D35;
+    width: 100%;
+    height: 50px;
+}
+
+header #ud_logo {
+    float: left;
+    width: 80px;
+    margin: 9px 0 0 8px;
+}
+
+header #ud_logo img {
+    width: 200%;
+    height: auto;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+header #ud_kontakt_icon {
+    float: right;
+    width: 72px;
+    height: 40px;
+}
+
+header #ud_kontakt_icon .ud_kontakt_icon {
+    font-size: 12px;
+    width: 35%;
+    height: 40px;
+    border-left: 1px solid #dfdfdf;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+header #ud_kontakt_icon .ud_kontakt_icon span {
+    display: block;
+    margin: 12px 0 0 8px;
+    cursor: pointer;
+}
+
+header nav {
+    float: right;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul {
+    margin: 9px 8px 0 0;
+    padding: 0;
+}
+
+header nav li {
+    margin: 0 10px 0 0;
+    padding: 0;
+    list-style-type: none; /* Punkte wegmachen */
+    float: left;
+}
+
+header nav li a {
+    text-transform: uppercase; /* Alles Groß geschrieben */
+    font-size: 15px;
+}
+
+/* ########## Menu Hover ########## */
+
+header:hover {
+    height: 70px;
+}
+
+header:hover > #ud_logo {
+    width: 140px;
+    margin: 15px 0 0 20px;
+}
+
+header:hover > #ud_kontakt_icon {
+    width: 142px;
+    height: 70px;
+}
+
+header:hover > #ud_kontakt_icon .ud_kontakt_icon {
+    width: 70px;
+    height: 70px;
+}
+
+header:hover > #ud_kontakt_icon .ud_kontakt_icon span {
+    margin: 26px 0 0 26px;
+    font-size: 15px;
+}
+
+header:hover > nav ul {
+    margin: 26px 20px 0 0;
+}
+
+header:hover > nav ul li a {
+    font-size: 15px;
+}
+
+/* Header */
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+
+    header {
+        position: fixed; /* Header wird fest in die obere linke ecke geschoben durch fixed und loat: left; */
+        z-index: 99; /* Header wird auf die höchste Ebene gelegt */
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #252D35;
+        width: 100%;
+        height: 50px;
+    }
+
+    header #ud_logo img {
+        width: 200%;
+        height: auto;
+        margin-top: 5px;
+        margin-left: 50px;
+    }
+
+    header nav {
+        float: right;
+        height: 40px;
+        margin: 0;
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 768px) {
+
+    header {
+        position: fixed; /* Header wird fest in die obere linke ecke geschoben durch fixed und loat: left; */
+        z-index: 99; /* Header wird auf die höchste Ebene gelegt */
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #252D35;
+        width: 100%;
+        height: 50px;
+    }
+
+    header #ud_logo img {
+        width: 200%;
+        margin-top: -45px;
+        margin-left:  300%;
+        height: 40px;
+    }
+
+    header nav {
+        float: right;
+        height: 40px;
+        margin: 0;
+        padding: 0;
+        display: none; /*  Here */
+    }
+
+    /* ########## Menu Hover ########## */
+
+
+    header:hover {
+        height: 50px;
+    }
+
+    header:hover > #ud_logo {
+        width: 80px;
+        margin: 9px 0 0 8px;
+
+    }
+
+    header:hover > #ud_kontakt_icon {
+        width: 142px;
+        height: 70px;
+    }
+
+    header:hover > #ud_kontakt_icon .ud_kontakt_icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    header:hover > #ud_kontakt_icon .ud_kontakt_icon span {
+        margin: 26px 0 0 26px;
+        font-size: 15px;
+    }
+
+    header:hover > nav ul {
+        margin: 26px 20px 0 0;
+    }
+
+    header:hover > nav ul li a {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    header #ud_logo img {
+        width: 200%;
+        margin-top: -45px;
+        margin-left:  165%;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    header {
+        position: fixed; /* Header wird fest in die obere linke ecke geschoben durch fixed und loat: left; */
+        z-index: 99; /* Header wird auf die höchste Ebene gelegt */
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #252D35;
+        width: 100%;
+        height: 50px;
+    }
+
+    header #ud_logo img {
+        width: 200%;
+        margin-top: -45px;
+        margin-left: 120px;
+        height: 40px;
+    }
+
+    header nav {
+        float: right;
+        height: 40px;
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+
+    /* ########## Menu Hover ########## */
+
+    header:hover {
+        height: 70px;
+    }
+
+    header:hover > #ud_logo {
+        width: 140px;
+        margin: 15px 0 0 20px;
+    }
+
+    header:hover > #ud_kontakt_icon {
+        width: 142px;
+        height: 70px;
+    }
+
+    header:hover > #ud_kontakt_icon .ud_kontakt_icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    header:hover > #ud_kontakt_icon .ud_kontakt_icon span {
+        margin: 26px 0 0 26px;
+        font-size: 15px;
+    }
+
+    header:hover > nav ul {
+        margin: 26px 20px 0 0;
+    }
+
+    header:hover > nav ul li a {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 290px) {
+
+    header #ud_logo img {
+        width: 200%;
+        margin-top: -45px;
+        margin-left: 90px;
+        height: 40px;
+    }
+
+}
+
+
+/* Header Ede */
+
+/* ################################################################################ */
+/* Startseite */
+/* ################################################################################ */
+
+#Startseite {
+    background: url("../images/bg_header.jpg"); /* Bilder die nur für die Optik dienen immer nur als Background url () einbinden. */
+    background-position: center center; /* für die Ausrichtung*/
+    background-attachment: fixed; /*Für den Scroll Effect*/
+    min-height: 100%;
+}
+
+#Startseite #ud_intro {
+    bottom: 50px;
+    left: 50px;
+    margin-top: 10%;
+    margin-left: 10px;
+}
+
+#Startseite #ud_intro h2 {
+    text-align: left;
+    margin: 0;
+    font-size: 30px;
+    line-height: 70px;
+    color: #fff;
+}
+
+#Startseite #ud_intro .ud_h2_balken {
+    margin: 10px 0 20px 0; /* Oben - Rechts - Unten - Links */
+}
+
+#Startseite #ud_intro p {
+    margin: 0 0 20px 0;
+    max-width: 300px;
+}
+
+#Startseite #ud_intro .ud_button {
+    border: 2px solid #fff;
+}
+
+@media screen and (min-width: 2000px) {
+
+    #Startseite #ud_intro {
+        bottom: 50px;
+        left: 50px;
+        margin-top: 10%;
+        margin-left: 10px;
+    }
+
+
+    #Startseite {
+        background: url("../images/bg_header2.jpg");
+    }
+}
+
+@media screen and (max-height: 480px) and (max-width: 650px) {
+
+    #Startseite #ud_intro h2 {
+        text-align: left;
+        margin: 0;
+        font-size: 25px;
+        line-height: 50px;
+        color: #fff;
+    }
+
+    #Startseite #ud_intro {
+        bottom: 50px;
+        left: 50px;
+        margin-top: 10%;
+    }
+
+    #Startseite #ud_intro p {
+        margin: 0 0 20px 0;
+        max-width: 300px;
+        font-size: 13px;
+    }
+}
+
+/* S5 */
+
+@media screen and (max-height: 640px) and (max-width: 360px) {
+
+    #Startseite #ud_intro h2 {
+        text-align: left;
+        margin: 0;
+        font-size: 20px;
+        line-height: 30px;
+        color: #fff;
+    }
+
+    #Startseite #ud_intro {
+        bottom: 50px;
+        left: 50px;
+        margin-top: 25%;
+    }
+
+    #Startseite #ud_intro p {
+        margin: 0 0 20px 0;
+        max-width: 300px;
+        font-size: 13px;
+    }
+}
+/* ################################################################################ */
+/* Über Uns*/
+/* ################################################################################ */
+
+#UeberUns .ud_UeberUns {
+    width: 42.5%;
+    float: left;
+    margin: 50px 0 0 2.5%;
+    min-height: 800px;
+}
+
+#UeberUns .ud_UeberUns:last-child {
+    width: 42.5%;
+    float: left;
+    margin: 58px 2.5% 0 0;
+}
+
+#UeberUns .ud_UeberUns article {
+    width: 100%;
+    text-align: center;
+    margin: 100px auto 100px auto;
+}
+
+#UeberUns .ud_motto_bg {
+    background: url("../images/bg_uebermich.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#UeberUns .ud_motto_bg article .ud_motto {
+    display: inline-block;
+    margin: 0 auto 0 auto;
+    width: 40%;
+    text-align: center;
+    font-size: 65px;
+    line-height: 55px;
+    text-transform: uppercase;
+}
+
+#UeberUns .ud_UeberUns .custom p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300; /* Stärke */
+    line-height: 40px;
+    word-spacing: 3px;
+    color: white;
+}
+
+
+@media screen and (max-width: 1100px) {
+    #UeberUns .ud_UeberUns article p {
+        text-align: justify;
+    }
+
+    #UeberUns .ud_UeberUns {
+        width: 80%;
+        float: left;
+        margin: -100px 10% 0 10%
+    }
+
+    #UeberUns .ud_UeberUns:last-child {
+        width: 80%;
+        float: left;
+        margin: 50px 10% 0 10%
+    }
+
+    #UeberUns .ud_UeberUns article {
+        margin: 20px 0 0 0;
+    }
+
+    #UeberUns .ud_motto_bg article .ud_motto {
+        font-size: 27px;
+        line-height: 22px; /* Zeilenhöhe */
+        width: 70%;
+        margin: 20px 0 20px 0;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    #UeberUns .ud_motto_bg article .ud_motto {
+        font-size: 110px;
+        line-height: 90px; /* Zeilenhöhe */
+        width: 70%;
+    }
+
+    #UeberUns .ud_UeberUns article p {
+        width: 70%;
+        font-size: 18px;
+        line-height: 25px; /* Zeilenhöhe */
+        margin: 0 auto 35px auto;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    #UeberUns .ud_motto_bg article .ud_motto {
+        font-size: 110px;
+        line-height: 90px; /* Zeilenhöhe */
+        width: 70%;
+    }
+
+    #UeberUns .ud_UeberUns article p {
+        width: 70%;
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 auto 35px auto;
+    }
+}
+
+@media screen and (max-width: 2300px) {
+    #UeberUns .ud_motto_bg article .ud_motto {
+        font-size: 110px;
+        line-height: 90px;
+        width: 70%;
+    }
+
+    #UeberUns .ud_UeberUns article p {
+        width: 70%;
+        font-size: 22px;
+        line-height: 35px;
+        margin: 0 auto 35px auto;
+    }
+}
+
+
+/* ################################################################################ */
+/* Leistungen */
+/* ################################################################################ */
+
+#Leistungen .ud_leistungen {
+    width: 90%;
+    margin: 50px auto 0 auto; /*Auto für automasches zentrieren*/
+}
+#Leistungen .ud_leistungen ul {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#Leistungen .ud_leistungen ul li {
+    position: relative;
+    list-style: none;
+    width: 30%;
+    margin: 0 5% 0 0;
+    float: left;
+    background-position: left bottom;
+    background-size: cover;
+    min-height: 650px;
+}
+
+#Leistungen .ud_leistungen ul li:last-child {
+    margin: 0 0 0 0;
+}
+
+#Leistungen .ud_leistungen ul li .ud_tag_line {
+    position: absolute;
+    bottom: 25px;
+    width: 80%;
+    left: 25px;
+}
+
+#Leistungen {
+    margin: 0 0 10px 0;
+}
+
+#Leistungen .ud_leistungen ul li .ud_tag_line {
+    position: absolute;
+    bottom: 25px;
+    width: 80%;
+    left: 25px;
+}
+
+#Leistungen .ud_leistungen ul li .ud_tag_line .ud_h3_balken {
+    margin: 0 0 10px 0;
+}
+
+#Leistungen .ud_leistungen ul li .ud_tag_line p {
+    margin: 0;
+    padding: 0;
+}
+
+#Leistungen .ud_leistungen ul li .ud_tag_line h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+
+#Leistungen .ud_leistungen ul li.ud_programmierung {
+    background: url("../images/bg_programmierung.jpg");
+    background-position: center center; /* für die Ausrichtung*/
+}
+
+#Leistungen .ud_leistungen ul li.ud_responsive {
+    background: url("../images/bg_responsive.jpg");
+    background-position: center center; /* für die Ausrichtung*/
+}
+
+#Leistungen .ud_leistungen ul li.ud_support {
+    background: url("../images/bg_support.jpg");
+    background-position: center center; /* für die Ausrichtung*/
+}
+
+@media screen and (max-width: 1150px) {
+    #Leistungen {
+        width: 100%;
+    }
+
+    #Leistungen .ud_leistungen ul li .ud_tag_line {
+        position: relative; /*Damit man die Box angreifen kann*/
+        float: left;
+        width: 80%;
+        margin: 20% 10% 5% 0;
+    }
+
+    #Leistungen .ud_leistungen ul li .ud_tag_line h3 {
+        font-size: 50px;
+        line-height: 45px;
+    }
+
+    #Leistungen .ud_leistungen ul li .ud_tag_line p {
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+
+    #Leistungen .ud_leistungen ul li {
+        width: 80%;
+        margin: 0 10% 5% 10%;
+    }
+
+    #Leistungen .ud_leistungen ul li:last-child {
+        margin: 0 10% 5% 10%;
+    }
+}
+
+@media screen and (max-width: 838px){
+
+    #Leistungen .ud_leistungen ul li .ud_tag_line h3 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+}
+
+@media screen and (max-width: 669px){
+
+    #Leistungen .ud_leistungen ul li .ud_tag_line h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 505px){
+
+    #Leistungen .ud_leistungen ul li .ud_tag_line h3 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+/*Handy*/
+
+@media screen and (max-width: 400px) {
+    #Leistungen {
+        width: 100%;
+    }
+
+    #Leistungen .ud_leistungen ul li .ud_tag_line {
+        position: relative; /*Damit man die Box angreifen kann*/
+        float: left;
+        width: 80%;
+        margin: 20% 10% 5% 0;
+    }
+
+    #Leistungen .ud_leistungen ul li .ud_tag_line h3 {
+        font-size: 10px;
+        line-height: 45px;
+    }
+
+    #Leistungen .ud_leistungen ul li .ud_tag_line p {
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+
+    #Leistungen .ud_leistungen ul li {
+        width: 80%;
+        margin: 0 10% 5% 10%;
+    }
+
+    #Leistungen .ud_leistungen ul li:last-child {
+        margin: 0 10% 5% 10%;
+    }
+}
+/* ################################################################################ */
+/* Kontakt */
+/* ################################################################################ */
+
+#Kontakt {
+    background: url("../images/bg_kontakt.jpg"); /* Bilder die nur für die Optik dienen immer nur als Background url () einbinden. */
+    background-position: center center; /* für die Ausrichtung*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#Kontakt .ud_kontakt {
+    width: 100%;
+    text-align: center;
+}
+
+#Kontakt .ud_kontakt ul {
+    margin: 150px 0 0 0;
+    padding: 0;
+}
+
+#Kontakt .ud_kontakt ul li {
+    margin: 0 0 15px 0;
+    padding: 0;
+    list-style: none;
+    font-size: 17px;
+}
+
+#Kontakt .ud_kontakt ul li a {
+    text-decoration: underline;
+}
+
+/* Nachrichten Container */
+/* Absenden */
+
+#Kontakt #system-message-container {
+    background: #252D35;
+    color: white;
+    width: 50%;
+    border-radius: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 40px;
+    z-index: 1000;
+    text-align: center;
+    position: relative;
+}
+
+/* Formular */
+
+/* All inputs */
+#Kontakt #contact-form #jform_contact_name,#Kontakt #contact-form #jform_contact_email,
+#Kontakt #contact-form #jform_contact_emailmsg,#Kontakt #contact-form #jform_contact_message {
+    text-align: center;
+    width: 50%;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 402px) {
+    #Kontakt #system-message-container {
+      font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #Kontakt .ud_kontakt ul {
+        margin: 65px 0 0 0;
+    }
+}
+
+/* ################################################################################ */
+/* Impressum */
+/* ################################################################################ */
+
+#Impressum  {
+    width: 100%;
+    background: url("../images/bg_header.jpg");
+}
+
+#Impressum #ud_impressum .custom p {
+    margin: 0 25px 20px 25px;
+}
+
+@media screen and (max-width: 400px) {
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+
+    #Impressum {
+        background: url("../images/bg_header2.jpg");
+    }
+
+}
+/* ################################################################################ */
+/* Datenschutz */
+/* ################################################################################ */
+
+#Datenschutz #ud_datenschutz .custom p {
+    margin: 0 25px 20px 25px;
+}
+
+/* ################################################################################ */
+/* Footer */
+/* ################################################################################ */
+
+footer {
+    clear: both;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding: 50px 0 0 0;
+    font-size: 10px;
+}
+
+footer .ud_logo {
+    width: 100%;
+}
+
+footer .ud_logo img {
+    width: 130px;
+    height: auto;
+}
+
+footer #ud_copyright {
+    margin: 20px 0 0 0;
+    padding: 0;
+    display: inline;
+}
+
+footer #ud_meta_nav {
+    margin: 20px 0 0 0;
+}
+
+footer #ud_meta_nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer #ud_meta_nav ul li {
+    margin: 0;
+    padding: 0 2px 0 2px;
+    list-style: none;
+    display: inline;
+}
+
+
+@media screen and (max-width: 800px) {
+    footer {
+        height: 110px;
+        padding: 20px 0 0 0 ;
+    }
+
+    footer #ud_meta_nav {
+        margin: 0;
+    }
+}
+
+/* ################################################################################ */
+/* Cookie */
+/* ################################################################################ */
+
+#cookiestyle {
+    position: fixed;
+    bottom: 0;
+    z-index: 998;
+    width: 100%;
+    background: #252D35;
+    text-align: center;
+}
+
+#cookiestyle a {
+    color: white;
+    text-decoration:none;
+}
+
+#cookiestyle a:hover {
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+#cookiestyle div {
+    color: white;
+    padding: 10px;
+    padding-right: 40px;
+    margin: 0 0 0 34px; /* Oben - Rechts - Unten - Links */
+}
+
+.cookiebutton {
+    color: #FF8201;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 580px) {
+    #cookiestyle {
+        font-size: 10px;
+    }
+}
+
+/*###########################################*/
+/* Pre Loader */
+/*###########################################*/
+
+/*########### Styling ########### */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+#preloader .pre_half {
+    background: #111;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+#preloader #bg_left{
+    left: 0;
+}
+
+#preloader #bg_right{
+    right: 0;
+}
+
+#preloader #dots {
+    z-index: 1000;
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#preloader #dots p {
+    width: 100%;
+    margin: 0 0 30px 0;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+#preloader #dots .dots {
+    animation: infinite 500ms ease-in-out;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+#preloader #dots .dots:last-child {
+    margin: 0 0 0 0;
+}
+
+/*###########################################*/
+/*########### Punkt 1 ########### */
+/*###########################################*/
+
+@keyframes preloader_1 {
+    0% {
+        background: #fff;
+        transform: translateY(0);
+    }
+
+    25% {
+        background: #ff6600;
+        transform: translateY(-5px);
+    }
+
+    50% {
+        background: #fff;
+        transform: translateY(0);
+    }
+}
+
+/*###########################################*/
+/*########### Punkt 2 ########### */
+/*###########################################*/
+
+@keyframes preloader_2 {
+    25% {
+        background: #fff;
+        transform: translateY(0);
+    }
+
+    50% {
+        background: #ff6600;
+        transform: translateY(-5px);
+    }
+
+    75% {
+        background: #fff;
+        transform: translateY(0);
+    }
+}
+
+/*###########################################*/
+/*########### Punkt 3 ########### */
+/*###########################################*/
+
+@keyframes preloader_3 {
+    50% {
+        background: #fff;
+        transform: translateY(0);
+    }
+
+    75% {
+        background: #ff6600;
+        transform: translateY(-5px);
+    }
+
+    100% {
+        background: #fff;
+        transform: translateY(0);
+    }
+}
+
+/*###########################################*/
+/*########### Punkt 4 ########### */
+/*###########################################*/
+
+@keyframes preloader_4 {
+    75% {
+        background: #fff;
+        transform: translateY(0);
+    }
+
+    100% {
+        background: #ff6600;
+        transform: translateY(-5px);
+    }
+
+    25% {
+        background: #fff;
+        transform: translateY(0);
+    }
+}
+
+/* Hover Effect wird ausgeblendet */
+
+body .popover {
+    position: fixed;
+    display: none !important;
+}
+
+/* Menubutton */
+header .mod_menubutton  {
+    width: 40px;
+}
+
+ header .menu-style {
+    height: 29px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+header .wl-line1 {
+    height: 5px;
+    width: 40px;
+    background: white;
+    border-radius: 7px;
+}
+
+header .wl-line2 {
+    height: 5px;
+    width: 40px;
+    background: white;
+    border-radius: 7px;
+    margin-top: 7px;
+}
+
+header .wl-line3 {
+    height: 5px;
+    width: 40px;
+    background: white;
+    border-radius: 7px;
+    margin-top: 7px;
+}
+
+@media only screen and (max-width: 768px) {
+    header .menu-style {
+        height: 29px;
+        width: 40px;
+        cursor: pointer;
+        display:inherit;
+    }
+
+    header .wl-line1 {
+        height: 5px;
+        width: 40px;
+        background: white;
+        border-radius: 7px;
+    }
+
+    header .wl-line2 {
+        height: 5px;
+        width: 40px;
+        background: white;
+        border-radius: 7px;
+        margin-top: 7px;
+    }
+
+    header .wl-line3 {
+        height: 5px;
+        width: 40px;
+        background: white;
+        border-radius: 7px;
+        margin-top: 7px;
+    }
+
+    /* Menu */
+
+    header nav {
+        margin: 0;
+        padding: 0;
+        background: #252D35;
+        height: 200px;
+        width: 100px;
+        color: white;
+        float: left;
+        margin-left: -88px;
+        margin-top: 21px;
+    }
+
+    header nav ul {
+        margin: 9px 8px 0 0;
+        padding: 0;
+        color: white;
+    }
+
+    header nav li {
+        margin: 0 10px 0 0;
+        padding: 0;
+        list-style-type: none; /* Punkte wegmachen */
+        float: left;
+    }
+
+    header nav li a {
+        text-transform: uppercase; /* Alles Groß geschrieben */
+        font-size: 15px;
+    }
+
+    header:hover {
+        height: 50px;
+    }
+
+    header:hover > #ud_logo {
+        width: 80px;
+        margin: 9px 0 0 8px;
+
+    }
+
+    header:hover > #ud_kontakt_icon {
+        width: 142px;
+        height: 50px;
+    }
+
+    header:hover > #ud_kontakt_icon .ud_kontakt_icon {
+        width: 70px;
+        height: 50px;
+    }
+
+    header:hover > #ud_kontakt_icon .ud_kontakt_icon span {
+        margin: 26px 0 0 26px;
+        font-size: 15px;
+    }
+
+    header:hover > nav ul {
+        margin: 26px 20px 0 0;
+    }
+
+}
