@@ -68,7 +68,7 @@ JHtml::_('script', 'scripts.js', array('version' => 'auto', 'relative' => true))
 
         <jdoc:include type="modules" name="menubutton" style="none" />
 
-        <div id="ud_logo"><a href="#Startseite"><img src="images/logo_v2.png" alt=""></a></div>
+        <div id="ud_logo"><a href="#Startseite"><img src="images/logo_v1.png" alt=""></a></div>
 
         <jdoc:include type="modules" name="header" style="none" />
 
